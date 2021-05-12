@@ -93,7 +93,7 @@
         </div>
         <!-- End #about -->
         <div id="experience" class="background-alt">
-            <h2 class="heading">Experience</h2>
+            <h2 class="heading">Job History</h2>
             <div id="experience-timeline">
                 <div data-date="October 2018 - Present">
                     <h3>Busy Beaver Building Centers</h3>
@@ -118,12 +118,11 @@
             <h2 class="heading">Education</h2>
 
             <div class="education-block">
-                <h3>Penn State University</h3>
+                <h3>Penn State University - College of Engineering</h3>
                 <span class="education-date">August 2020 - Present</span>
                 <h4>Computer Science, B.S.</h4>
                 <p>
-                    I am currently pursuing a bachelors in Computer Science at PSU - University Park.
-                    <br/>
+                    I am currently pursuing a bachelors in Computer Science at PSU - University Park.<br/>
                     I have enjoyed meeting a variety of individuals through clubs and other programs while furthering my education.
                 </p>
 
@@ -139,15 +138,29 @@
                 <div class="row">
                     <div class="project shadow-large">
                         <div class="project-image">
-                            <img src="images/project.jpg" />
+                            <img src="images/doctestbtn.png" />
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
-                            <h3>Project Name Here</h3>
+                            <h3>VSCode - Python DoctestBtn</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                                <span id="less1">
+                                    PyDoctestBtn is an extension that helps make running Python Doctests simpler.
+                                </span> 
+                                <span id="more1" class="readMore-more">
+                                    PyDoctestBtn is an extension that helps make running Python Doctests simpler. The 
+                                    extension aims to replicate the functionality of VSCode's Python extension's 'run' button
+                                    by creating a button to run doctests. This has proven extremely useful in writing python
+                                    code and during Computer Science classes.
+                                </span>
+                                <span>
+                                    <button onclick="readMore('less1', 'more1', 'rmbtn1')" id="rmbtn1" >Read more</button>
+                                </span>
                             </p>
-                            <a href="#">View Project</a>
+
+                            
+
+                            <a href="https://github.com/NoahSyn10/VSCode-PyDoctestBtn" target="_blank">View Project</a>
                         </div>
                         <!-- End .project-info -->
                     </div>
@@ -155,15 +168,26 @@
 
                     <div class="project shadow-large">
                         <div class="project-image">
-                            <img src="images/project.jpg" />
+                            <img src="images/codepath.jpg"           style="height: 7em; margin-bottom: 8em; margin-top:6em; margin-left: 2em;" />
+                            <img src="images/AndroidStudioLarge.ico" style="height: 7em; margin-bottom: 8em; margin-top:6em;" />
                         </div>
                         <!-- End .project-image -->
                         <div class="project-info">
-                            <h3>Project Name Here</h3>
+                            <h3>CodePath Android Projects</h3>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                                <span id="less2">
+                                    A collection of android apps I worked on during the CodePath Android development course.
+                                </span> 
+                                <span id="more2" class="readMore-more">
+                                    A collection of android apps I worked on during the CodePath Android development course.
+                                    Through these I learned the basics of android development and greatly improved my skills in
+                                    Java and OOP in general.
+                                </span>
+                                <span>
+                                    <button onclick="readMore('less2', 'more2', 'rmbtn2')" id="rmbtn2" >Read more</button>
+                                </span>
                             </p>
-                            <a href="#">View Project</a>
+                            <a href="https://github.com/NoahSyn10/AndroidApps" target="_blank">View Project</a>
                         </div>
                         <!-- End .project-info -->
                     </div>
@@ -176,32 +200,13 @@
         <div id="skills">
             <h2 class="heading">Skills</h2>
             <ul>
-                <li>JavaScript</li>
                 <li>Python</li>
-                <li>Ruby</li>
-                <li>Go</li>
-                <li>Node.js</li>
-                <li>AngularJs</li>
-                <li>React</li>
-                <li>Elixir</li>
-                <li>Java</li>
-                <li>C</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>Ruby on Rails</li>
+                <li>TypeScript</li>
                 <li>JavaScript</li>
-                <li>Python</li>
-                <li>Ruby</li>
-                <li>Go</li>
-                <li>Node.js</li>
-                <li>AngularJs</li>
-                <li>React</li>
-                <li>Elixir</li>
                 <li>Java</li>
-                <li>C</li>
-                <li>C#</li>
-                <li>C++</li>
-                <li>Ruby on Rails</li>
+                <li>Android API</li>
+                <li>VSCode API</li>
+                <li>JSON</li>
             </ul>
         </div>
         <!-- End #skills -->
@@ -255,7 +260,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
 
-    <script src="parallax.js"></script>
+    <script src="js/parallax.js"></script>
+    <script src="js/readmore.js"></script>
 </body>
 
 </html>
