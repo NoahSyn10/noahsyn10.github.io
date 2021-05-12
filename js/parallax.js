@@ -4,4 +4,5 @@ var controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "
 
 new ScrollMagic.Scene({triggerElement: "#body"})
 .setTween("#lead", {y: "70%", ease: Linear.easeNone})
+.addIndicators()
 .addTo(controller);
