@@ -274,6 +274,9 @@ footer {
   flex-direction: column;
   align-items: center;
 }
+#lead-content i {
+  color: white;
+}
 #lead-content h1,
 #lead-content h2 {
   margin: 0;
