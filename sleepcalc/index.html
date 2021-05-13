@@ -23,7 +23,7 @@
                 var bedTime = document.getElementById("bed-time");
 
                 var wakeHour = parseInt(wakeupTime.slice(0, 2));
-                var wakeMinute = parseInt(wakeupTime.slice(3));
+                var wakeMinute = wakeupTime.slice(3);
 
                 var bedHour = 12 - sleepLength + wakeHour;
                 var bedMinute = wakeMinute;
@@ -36,12 +36,10 @@
                 if (bedHour <= 12) {
                     bedSuff = "PM";
                 } else {
-                    bedHour = bedHour - 12;
+                    while (bedHour > 12) {
+                        bedHour = bedHour - 12;
+                    }
                     bedSuff = "AM";
-                }
-
-                if (bedMinute < 10) {
-                    bedMinute = "0"+bedMinute.toString();
                 }
 
                 bedTime.innerHTML = bedHour + ":" + bedMinute + " " + bedSuff;
