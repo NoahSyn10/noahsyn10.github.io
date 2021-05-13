@@ -70,6 +70,7 @@
                 var wakeMinute = parseInt(wakeupTime.slice(3));
 
                 var bedHour = 12 - sleepLength + wakeHour;
+                var bedMinute = wakeMinute;
                 var bedSuff = "**";
 
                 while (bedHour <= 0) {
@@ -83,7 +84,11 @@
                     bedSuff = "AM";
                 }
 
-                bedTime.innerHTML = bedHour + ":" + wakeMinute + " " + bedSuff;
+                if (bedMinute < 10) {
+                    bedMinute = "0"+bedMinute.toString();
+                }
+
+                bedTime.innerHTML = bedHour + ":" + bedMinute + " " + bedSuff;
             }
         </script>
     </body>
